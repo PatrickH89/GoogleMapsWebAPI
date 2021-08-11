@@ -51,7 +51,7 @@ namespace GoogleMapsWebAPI.Controllers
         [HttpPost("AddAddress")]
         public async Task<ActionResult> AddAddress([FromBody] AddressInputModel address)
         {
-            // call method: get longitude and latitude from geocoding API
+            // call method: get longitude and latitude from Geocoding API
             if (!ModelState.IsValid)
             {
                 return BadRequest();
