@@ -25,11 +25,10 @@ __Steps to create your own database:__
      update-database 
 ```
 
-Now you created your own sql db. Thus you can run the WebAPI and writing your first address in the db with e.g. [Postman](https://www.postman.com/).  
-Or you Click [here](https://github.com/PatrickH89/GoogleMapsWebAPI_Frontend) to switch to the Frontend project.  
+Now you created your own sql db. Thus you can run the WebAPI and writing your first address in the db with e.g. [Postman](https://www.postman.com/) or you click [here](https://github.com/PatrickH89/GoogleMapsWebAPI_Frontend) and use my Frontend.  
 
 ## Features
-> Here are the urls and the HTML body to CREATE, UPDATE, DELETE and READ addresses with Postman/Browser.
+Here are the urls and the HTML body to CREATE, UPDATE, DELETE and READ addresses with Postman/Browser.
 
 __GET ALL ADDRESSES:__
 ```yml
