@@ -1,33 +1,12 @@
 # GoogleMapsWebAPI
 
-## General info
-> Here I coded my first Google Maps Web API.  
-> You will be able to send/receive addresses-data in json-format over http protocol.  
-> <br/>If you create/update an address the Web API will send that address to the Google Geocoding API to get latitude and longitude and save all data in a sql database.  
-> It will contain all CRUD operations to create, read, update and delete an address in the sql database.  
-> <br/>For safety the Google Geocoding API Key is limited to 100 requests a day.
-
-## Screenshots
-<figure>
-	<figcaption><strong>Display all Addresses</strong></figcaption>
-	<img title="Display all Addresses" src="./NotesWebApp/wwwroot/images/01_Display_all_Addresses.png" alt="Display all Addresses" width="100%" height="100%" >
-</figure>
-
-<figure>
-	<figcaption><strong>Display one Address</strong></figcaption>
-	<img title="Display one Address" src="./NotesWebApp/wwwroot/images/02_Display_One_Address.png" alt="Display one Address" width="100%" height="100%" >
-</figure>
-
-<figure>
-	<figcaption><strong>Update an Address</strong></figcaption>
-	<img title="Update an Address" src="./NotesWebApp/wwwroot/images/03_Update_an_Address.png" alt="Update an Address" width="100%" height="100%" >
-</figure>
-
-<figure>
-	<figcaption><strong>Create an Address</strong></figcaption>
-	<img title="Create an Address" src="./NotesWebApp/wwwroot/images/04_Create_an_Address.png" alt="Create an Address" width="100%" height="100%" >
-</figure>
-
+Here I coded my first Google Maps Web API.  
+You will be able to send/receive addresses-data in json-format over http protocol.  
+<br/>If you create/update an address the Web API will send that address to the Google Geocoding API to get latitude and longitude and save all data in a sql database. It will contain all CRUD operations to CREATE, READ, UPDATE and DELETE an address from/to the sql database.  
+<br/>For safety the Google Geocoding API Key is limited to 100 requests a day.  
+<br/>For this WebAPI I will upload two Frontends.
+* 1 Frontend with ASP.NET CORE MVC and Bootstrap 4 
+* 1 Frontend with Vue.js, JS, Boostrap 4
 
 ## Technologies
 * ASP.NET Core - version 3.1
@@ -36,18 +15,40 @@
 * IIS + MS SQL Server
 
 ## Setup
-Just download the project und let it run in Visual Studio Community. 
-The GoogleMapsWebAPI will be started and a sql db will be created thus you can start writing your first address for example with Postman.
+Before running this WebAPI you will have to delete the Migrations folder and make your own migration for creating your own sql database.
 
-Later on I will explain all urls and an example for json format address to create a new one. Update, Delete, Read ones/all.
+Steps to create your own database:
+1. Open the project
+2. Delete the whole Migrations folder with its two files
+3. Go to: Tools -> NuGet Package Manager -> Package Manager Console
+4. Write in Console: Add-Migration 
+5. With Name: MyAddressDB
+6. Migrations folder with two files "number_MyAddressDB" and "...Snapshot" should be created automatically
+7. Write in Console: update-database 
+8. Check if DB got created: View -> SQL Server ... Eplorer -> localdb -> Databases -> 
+   MyAddressesDB -> Tables -> rightclick db Address ... Model -> View Data
+
+Now you created your own sql db. Thus you can run the WebAPI and writing your first address in the db with e.g. Postman.
 
 ## Features
-To-do list:
-* Display all addresses
-* Display one address by Id
-* Create an address
-* Update an address by Id
-* Delete an address by Id
+Here are the urls and the HTML body to CREATE, UPDATE, DELETE and READ addresses with Postman/Browser.
+
+* GET ALL ADDRESSES:  
+https://localhost:44369/api/Address/GetAddresses
+
+* GET ONE ADDRESS BY ID:  
+https://localhost:44369/api/Address/SelectAddress/2
+
+* CREATE A NEW ADDRESS:  
+https://localhost:44369/api/Address/AddAddress  
+HTML body: {"street":"Schaumainkai","streetNumber":"50","postCode":"60596","city":"Frankfurt am Main","country":"Deutschland"}
+
+* UPDATE AN ADDRESS BY ID:  
+https://localhost:44369/api/Address/UpdateAddress/5  
+HTML body: { "street": "Theodor-W.-Adorno-Platz", "streetNumber": "1", "postCode": "60323", "city": "Frankfurt", "country": "Deutschland" }
+
+* DELETE AN ADDRESS BY ID:  
+https://localhost:44369/api/Address/DeleteAddress/3
 
 ## Status
-Project is: _in progress_
+Project is: _finisehd_

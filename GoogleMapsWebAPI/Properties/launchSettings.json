@@ -11,6 +11,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
+      "launchUrl": "api/Address/GetAddresses",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -18,6 +19,7 @@
     "GoogleMapsWebAPI": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "https://localhost:5001/address/",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
