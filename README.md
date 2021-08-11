@@ -2,11 +2,10 @@
 
 Here I coded my first Google Maps Web API.  
 You will be able to send/receive addresses-data in json-format over http protocol.  
-<br/>If you create/update an address the Web API will send that address to the Google Geocoding API to get latitude and longitude and save all data in a sql database. It will contain all CRUD operations to CREATE, READ, UPDATE and DELETE an address from/to the sql database.  
+<br/>If you create/update an address the Web API will send that address to the Google Geocoding API to get latitude and longitude and save all data in a sql database.  
+It will contain all CRUD operations to CREATE, READ, UPDATE and DELETE an address from/to the sql database.  
 <br/>For safety the Google Geocoding API Key is limited to 100 requests a day.  
-<br/>For this WebAPI I will upload two Frontends.
-* 1 Frontend with ASP.NET CORE MVC and Bootstrap 4 
-* 1 Frontend with Vue.js, JS, Boostrap 4
+<br/>For this WebAPI I will upload one Frontend with ASP.NET CORE MVC and Bootstrap 4 to consume that WebAPI. 
 
 ## Technologies
 * ASP.NET Core - version 3.1

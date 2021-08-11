@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GoogleMapsWebAPI.Migrations
 {
     [DbContext(typeof(AddressContext))]
-    [Migration("20210811143736_MyAddressDB")]
+    [Migration("20210811160245_MyAddressDB")]
     partial class MyAddressDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
