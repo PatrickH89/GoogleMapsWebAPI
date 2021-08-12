@@ -4,7 +4,7 @@ Here I coded my first Google Maps Web API.
 You will be able to send/receive addresses-data in json-format over http protocol.  
 <br/>If you create/update an address, the Web API will send that address to the Google Geocoding API to get latitude and longitude and save all that data in a  local sql database.  
 The WebAPI contains all CRUD operations to CREATE, READ, UPDATE and DELETE an address from/to the sql database.  
-<br/>For safety the Google Geocoding API Key is limited to 100 requests a day.  
+<br/>For safety the Google Geocoding API Key in appsettings.json file is not working. You must replace it with a working one. 
 <br/>Here I uploaded a [Frontend](https://github.com/PatrickH89/GoogleMapsWebAPI_Frontend) to consume that WebAPI.  
 
 ## Technologies
@@ -15,6 +15,7 @@ The WebAPI contains all CRUD operations to CREATE, READ, UPDATE and DELETE an ad
 
 ## Setup
 Before running this WebAPI you will have to delete the Migrations folder and make your own migration for creating your own sql database.
+And dont forget to use a working API Key in appsettings.json file.
 
 __Steps to create your own database:__
 ```markdown
