@@ -1,18 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using GoogleMapsWebAPI.Models.Configuration;
-using GoogleMapsWebApi.Models.Configuration;
 using GoogleMapsWebAPI.Interfaces;
-using GoogleMapsApi.Services;
 using GoogleMapsWebAPI.Mapper;
+using GoogleMapsWebAPI.Services;
 
 namespace GoogleMapsWebAPI
 {

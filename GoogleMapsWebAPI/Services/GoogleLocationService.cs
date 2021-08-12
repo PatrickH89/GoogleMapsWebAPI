@@ -1,4 +1,4 @@
-﻿using GoogleMapsWebApi.Models.Configuration;
+﻿using GoogleMapsWebAPI.Models.Configuration;
 using GoogleMapsWebAPI.Interfaces;
 using GoogleMapsWebAPI.Models;
 using Newtonsoft.Json;
@@ -6,7 +6,7 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace GoogleMapsApi.Services
+namespace GoogleMapsWebAPI.Services
 {
     public class GoogleLocationService : IGoogleLocationService
     {

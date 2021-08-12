@@ -1,4 +1,4 @@
-﻿namespace GoogleMapsWebApi.Models.Configuration
+﻿namespace GoogleMapsWebAPI.Models.Configuration
 {
     public class GoogleConfiguration
     {

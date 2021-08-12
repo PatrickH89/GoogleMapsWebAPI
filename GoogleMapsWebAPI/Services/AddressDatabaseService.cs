@@ -5,7 +5,7 @@ using GoogleMapsWebAPI.Interfaces;
 using GoogleMapsWebAPI;
 using GoogleMapsWebAPI.Models;
 
-namespace GoogleMapsApi.Services
+namespace GoogleMapsWebAPI.Services
 {
     public class AddressDatabaseService : IAddressDatabaseService
     {
