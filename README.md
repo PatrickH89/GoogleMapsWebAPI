@@ -19,9 +19,8 @@ Before running this WebAPI you will have to delete the Migrations folder and mak
 
 __Steps to create your own database:__
 ```markdown
-1. Open project
-2. Delete 'Migrations' folder and its files
-3. Write in Package Manager Console of VS
+1. Delete whole 'Migrations' folder
+3. Write in Package Manager Console of Visual Studio
      add-Migration MyAddressDB 
      update-database 
 ```

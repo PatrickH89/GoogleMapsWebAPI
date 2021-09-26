@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using GoogleMapsWebAPI.Interfaces;
-using GoogleMapsWebAPI;
 using GoogleMapsWebAPI.Models;
 
 namespace GoogleMapsWebAPI.Services
